@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zappos.ilovemarshmallow.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/zappos_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_view"
+        android:layout_below="@id/zappos_toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <include layout="@layout/scroll_item_basic"/>
+
+            <include layout="@layout/divider"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/product_description"
+        android:layout_below="@id/scroll_view"
+        android:scrollbars="none"
+        android:fadingEdgeLength="0dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scroll_item_basic_title"
+    style="@style/ScrollItemDetails">
+
+    <TextView
+        android:layout_width="@dimen/scroll_item_title_width"
+        android:layout_height="wrap_content"
+        android:id="@+id/brand_name"
+        android:textColor="@color/list_item_brand_name"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textSize="25sp"
+        android:textColor="@color/list_item_price"/>
+
+</LinearLayout>

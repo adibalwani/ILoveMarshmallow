@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--
+        As the main content view, the view below consumes the entire space
+        available using match_parent in both dimensions
+     -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zappos.ilovemarshmallow.ZapposActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/zappos_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zappos_toolbar"
+        android:id="@+id/mainList"
+        android:overScrollMode="never"
+        android:nestedScrollingEnabled="true">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:visibility="gone"
+            android:indeterminateOnly="true"/>
+
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="true"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

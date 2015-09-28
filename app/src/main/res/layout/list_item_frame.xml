@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_item_product_background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_image"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/item_frame_image_padding"/>
+
+    </FrameLayout>
+
+    <include layout="@layout/list_item_details"/>
+
+</LinearLayout>

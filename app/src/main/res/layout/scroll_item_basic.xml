@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_item_product_background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_image"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/item_frame_image_padding"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/scroll_item_basic_title"
+            android:id="@+id/scroll_item_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_name"
+            android:layout_below="@id/scroll_item_title"
+            android:paddingStart="@dimen/item_details_padding_start"
+            android:paddingEnd="@dimen/item_details_padding_right"
+            android:singleLine="true"
+            android:textColor="@color/list_item_product_name"
+            android:textSize="15sp"/>
+
+        <RatingBar
+            android:id="@+id/product_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3.0"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:paddingBottom="@dimen/item_details_padding_bottom"
+            style="@style/android:Widget.Material.RatingBar.Small"
+            android:layout_below="@id/product_name"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

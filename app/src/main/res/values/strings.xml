@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ILoveMarshmallow</string>
+    <string name="title_activity_zappos">Zappos</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_search">Search</string>
+
+    <string name="font_fontFamily_medium">sans-serif-medium</string>
+
+    <string name="action_search_hint">Search Products and Brands</string>
+    <string name="title_activity_detail">Details</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="asin">ASIN</string>
+    <string name="price">PRICE</string>
+    <string name="rating">RATING</string>
+
+    <string name="black_screen">Click on search icon to begin</string>
+    <string name="network_unavailable">No Internet Connection</string>
+</resources>

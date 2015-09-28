@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_primaryDark">#0287C3</color>
+    <color name="theme_primary">#03A9F4</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Text Color -->
+    <color name="list_item_price">#3BCDB9</color>
+    <color name="list_item_product_name">#A9A9A9</color>
+    <color name="list_item_brand_name">#414141</color>
+    <color name="list_item_product_rating">#757575</color>
+
+    <color name="list_item_product_background">#FEFEFE</color>
+    <color name="list_item_divider">#EBEBEB</color>
+</resources>
